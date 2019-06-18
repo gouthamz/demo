@@ -22,7 +22,7 @@ namespace azurecosmosdb.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = " change from kalyan branch Your contact page.";
 
             return View();
         }
