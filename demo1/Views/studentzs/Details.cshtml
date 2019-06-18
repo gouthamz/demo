@@ -1,0 +1,36 @@
+﻿@model demo1.studentz
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>studentz</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            <label>Photograph</label>
+        </dt>
+        <dd>
+            <img
+                 src="@Url.Content("https://demostorage123.blob.core.windows.net/newblob/" + Model.id.ToString() +".png")"
+                 style="height:200px;width:200px"
+                 />
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
