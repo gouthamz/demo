@@ -33,6 +33,6 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-  jobs:
+  
 - job: RunsInContainer
   container: ubuntu:16.04 # Docker Hub image reference
