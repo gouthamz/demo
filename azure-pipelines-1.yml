@@ -28,7 +28,7 @@ trigger:
     downloadPath: '$(System.ArtifactsDirectory)'
 
 pool:
-  vmImage: 'windows-latest'
+  vmImage: 'Hosted VS2017''
 
 variables:
   solution: '**/*.sln'
