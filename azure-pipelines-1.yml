@@ -1,4 +1,11 @@
 # ASP.NET
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Free Trial(96387c5c-2576-45b3-b7c8-f169d973c451)'
+    appType: 'webApp'
+    WebAppName: 'Roomapplication'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
 # Build and test ASP.NET projects.
 # Add steps that publish symbols, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/apps/aspnet/build-aspnet-4
