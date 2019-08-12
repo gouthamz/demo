@@ -1,4 +1,9 @@
 # ASP.NET
+- task: AzureKeyVault@1
+  inputs:
+    azureSubscription: 'Free Trial(96387c5c-2576-45b3-b7c8-f169d973c451)'
+    KeyVaultName: 'demoz2'
+    SecretsFilter: '123qaz123'
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
